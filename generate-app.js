@@ -7,7 +7,7 @@ const fs = require("fs");
 if (process.argv.length < 3) {
   console.log("You have to provide a name to your app.");
   console.log("For example :");
-  console.log("    npx create-my-boilerplate my-app");
+  console.log("    npx create-vite-netlify my-app");
   process.exit(1);
 }
 
@@ -38,6 +38,12 @@ async function main() {
 
     console.log("Installing dependencies...");
     execSync("pnpm install");
+
+    console.log("Removing useless files");
+    execSync("npx rimraf ./.git");
+    fs.rmdirSync(path.join(projectPath, "bin"), { recursive: true });
+
+    console.log("The installation is done, this is ready to use !");
   } catch (error) {
     console.log(error);
   }

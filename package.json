@@ -1,5 +1,5 @@
 {
-  "name": "duitify",
+  "name": "create-vite-netlify",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -30,9 +30,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/azhariemuhammad/cardooo/issues"
+    "url": "https://github.com/azhariemuhammad/create-vite-netlify/issues"
   },
-  "homepage": "https://github.com/azhariemuhammad/cardooo#readme",
+  "homepage": "https://github.com/azhariemuhammad/create-vite-netlify#readme",
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@babel/plugin-transform-runtime": "^7.18.2",
