@@ -1,0 +1,15 @@
+[build]
+  command = "npm run clean && npm run build:client"
+  functions = "functions"
+  publish = "dist"
+
+
+[dev]
+  command = "npm run dev:server" # Command to start your dev server
+  targetPort = 3001 # # The port for your application server, framework or site generator
+  port = 8888 # The port that the netlify dev will be accessible on
+  publish = "dist" # If you use a _redirect file, provide the path to your static content folder
+
+
+[functions]
+directory = "functions/"

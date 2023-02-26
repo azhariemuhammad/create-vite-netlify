@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  @apply text-gray-800;
+}
+
+/* h1 {
+  font-size: calc(2em * var(--text-multiplier, 1));
+}
+
+p {
+  font-size: calc(1em * var(--text-multiplier, 1));
+}
+
+@media (min-width: 48rem) {
+  :root {
+    --text-multiplier: 1.25;
+  }
+} */
+
