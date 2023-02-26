@@ -19,6 +19,9 @@
     "build:functions": "netlify build",
     "lint": "eslint . --max-warnings=0"
   },
+  "bin": {
+    "create-boilerplate": "./generate-app.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/azhariemuhammad/cardooo.git"
