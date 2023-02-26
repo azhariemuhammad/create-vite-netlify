@@ -11,7 +11,7 @@ if (process.argv.length < 3) {
   process.exit(1);
 }
 
-const projectName = process.argv[2];
+const projectName = process.argv[2] || "";
 const currentPath = process.cwd();
 const projectPath = path.join(currentPath, projectName);
 const git_repo = "https://github.com/azhariemuhammad/create-vite-netlify";
@@ -24,7 +24,7 @@ try {
       `The file ${projectName} already exist in the current directory, please give it another name.`
     );
   } else {
-    console.log(error);
+    console.log(err);
   }
   process.exit(1);
 }
