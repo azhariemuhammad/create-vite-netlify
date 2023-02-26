@@ -11,12 +11,12 @@ if (process.argv.length < 3) {
   process.exit(1);
 }
 
-const projectName = process.argv[2];
+const projectName = process.argv[2] || path.basename(process.cwd());
 const currentPath = process.cwd();
 const projectPath = path.join(currentPath, projectName);
 const git_repo = "https://github.com/azhariemuhammad/create-vite-netlify";
-
-if (projectName) {
+console.log({ projectName, projectPath });
+if (projectName !== ".") {
   try {
     fs.mkdirSync(projectPath);
   } catch (err) {
