@@ -34,7 +34,11 @@ if (projectName !== ".") {
 async function main() {
   try {
     console.log("Downloading files...");
-    execSync(`git clone --depth 1 ${git_repo} ${projectPath}`);
+    if (projectName !== ".") {
+      execSync(`git clone --depth 1 ${git_repo} ${projectPath}`);
+    } else {
+      execSync(`git clone --depth 1 ${git_repo}`);
+    }
 
     process.chdir(projectPath);
 
