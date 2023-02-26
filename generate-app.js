@@ -37,7 +37,7 @@ async function main() {
     if (projectName !== ".") {
       execSync(`git clone --depth 1 ${git_repo} ${projectPath}`);
     } else {
-      execSync(`git clone --depth 1 ${git_repo}`);
+      execSync(`git clone --depth 1 ${git_repo} .`);
     }
 
     process.chdir(projectPath);
